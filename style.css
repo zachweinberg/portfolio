@@ -129,6 +129,7 @@ img.resume {
   margin-left: 5px;
   text-decoration: none;
   font-size: 17px;
+  transition: linear 0.25s;
 }
 
 /* Change the color of links on hover */
