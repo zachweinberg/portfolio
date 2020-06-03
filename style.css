@@ -8,7 +8,7 @@
 
 .project-name {
   font-family: 'Libre Baskerville', serif;
-  color: #E94B3Cff;;
+  color: #E94B3Cff;
   font-size: 65pt;
 }
 
@@ -27,6 +27,8 @@ html {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 22pt;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h5 {
@@ -60,24 +62,6 @@ img.resume {
   margin-bottom: 50px;
   width: 65%;
 }
-
-.project-window:hover {
-  opacity: .5;
-}
-
-.project-window {
-    -webkit-transition: all 0.50s;
-    transition: all 0.50s;
-}
-.project-window:hover {
-    filter: brightness(130%);
-    -webkit-filter: brightness(130%);
-    -moz-filter: brightness(130%);
-     -o-filter: brightness(130%);
-    -ms-filter: brightness(130%);
-     -webkit-transition: all 0.50s;
-     transition: all 0.50s;
-  }
 
 .button {
   font-family: 'Montserrat', sans-serif;
@@ -162,10 +146,8 @@ img.resume {
 
 .row {
   background-color: #525252;
-}
-
-.col-md {
-  margin-top: 175px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .resume-text{
@@ -174,3 +156,98 @@ img.resume {
 }
 
 
+.img-description{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  color: #E94B3Cff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22pt;
+}
+
+
+.img-fluid{
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+  overflow: hidden;
+  display: block;
+  
+}
+
+.img-responsive {
+  width: auto;
+  height: 405px;
+  margin: auto;    
+  display: block;
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+}
+
+
+.img-fluid:hover{
+  opacity: .9;
+  filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  -moz-filter: brightness(130%);
+   -o-filter: brightness(130%);
+  -ms-filter: brightness(130%);
+   -webkit-transition: all 0.50s;
+   transition: all 0.50s;
+}
+
+.img-responsive:hover{
+  opacity: .9;
+  filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  -moz-filter: brightness(130%);
+   -o-filter: brightness(130%);
+  -ms-filter: brightness(130%);
+   -webkit-transition: all 0.50s;
+   transition: all 0.50s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.50s;
+  background-color: #525252;
+}
+
+.website-fluid:hover{
+  filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  -moz-filter: brightness(130%);
+  -o-filter: brightness(130%);
+  -ms-filter: brightness(130%);
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s;
+}
+
+.website-fluid:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: #E94B3Cff;
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
